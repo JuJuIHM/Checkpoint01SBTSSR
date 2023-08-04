@@ -33,6 +33,7 @@ Sur le réseau 10.0.1.0/26 la plage d'adresses disponible est la suivante :
 ##  1.3 Analyse de trames
 
 **Fichier 1**:
+
 16. la machine qui initialise la communication est Private_66:68:00 (00:50:79:66:68:00) - les machines du réseau 10.10.4.0
 
 17. Oui la communication a été établi entre les 2 machines du réseau 10.10.4.0, qui sont 10.10.4.1 et 10.10.4.2 La machine 10.10.4.1 a pingué la machine 10.10.4.2, cette dernière a bien répondu au ping.
@@ -42,6 +43,7 @@ Sur le réseau 10.0.1.0/26 la plage d'adresses disponible est la suivante :
 19. Les rôles des matériels A et B sont d'optimiser la "route" des flux entre les machines. 
 
 **Fichier 2**:
+
 20. la machine qui initialise la communication est Private_66:68:02 (00:50:79:66:68:02) - La machine 10.10.80.3
 
 21. La communication n'est pas établi (Host unreachable) entre la machine 10.10.80.3 et la machine 10.11.80.2
@@ -50,6 +52,7 @@ La communication est un échec car les machines ne sont pas dans le même résea
 22. Les rôles des matériels A et B est d'envoyer les requêtes aux bons équipements et de leurs renvoyer les flux qui leurs est destinés.
 
 **Fichier 3**:
+
 23. la machine qui initialise la communication est Private_66:68:02 (00:50:79:66:68:02) - La machine 10.10.80.3
 
 24. La communication n'a pas réussite car notre machine va pingué un réseau public (https://awebanalysis.com/fr/ip-lookup/8.8.8.8/) et sur un équipement CISCO qui plus est.
