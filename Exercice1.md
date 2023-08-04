@@ -1,4 +1,3 @@
-
 # Checkpoint01SBTSSR
 ##  1.1. Réponses éléments du réseau - QUIZZ
 
