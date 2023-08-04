@@ -1,2 +1,71 @@
 # Exercice 2 - scripting
 
+
+
+  04/08/2023   13:12.18   /home/mobaxterm  ls
+bin  Desktop  LauncherFolder  MyDocuments  script0.sh  script1.sh  script2.sh
+                                                                                                                             ✓
+
+  04/08/2023   13:12.22   /home/mobaxterm  mkdir configurationReseau.txt
+                                                                                                                             ✓
+
+  04/08/2023   13:12.46   /home/mobaxterm  cd configurationReseau.txt/
+                                                                                                                             ✓
+
+  04/08/2023   13:12.53   /home/mobaxterm/configurationReseau.txt  ls
+                                                                                                                             ✓
+
+  04/08/2023   13:12.57   /home/mobaxterm/configurationReseau.txt  nano configurationReseauInteractif.sh
+                                                                                                                             ✓
+
+  04/08/2023   13:28.14   /home/mobaxterm/configurationReseau.txt  ./configurationReseauInteractif.sh
+bash: ./configurationReseauInteractif.sh: Permission denied
+                                                                                                                             ✗
+
+  04/08/2023   13:29.00   /home/mobaxterm/configurationReseau.txt  chmod +x configurationReseauInteractif.sh
+                                                                                                                             ✓
+
+  04/08/2023   13:29.35   /home/mobaxterm/configurationReseau.txt  ./configurationReseauInteractif.sh
+./configurationReseauInteractif.sh: line 4: Nom: command not found
+./configurationReseauInteractif.sh: line 6: Adresse: command not found
+./configurationReseauInteractif.sh: line 8: Adresse: command not found
+./configurationReseauInteractif.sh: line 14: Merci d'avoir entré les informations suivantes :
+
+Nom du PC   : ${Nom du PC}
+Adresse MAC : ${Adresse MAC}
+Adresse IP  : ${Adresse IP}: bad substitution
+                                                                                                                             ✗
+
+  04/08/2023   13:29.47   /home/mobaxterm/configurationReseau.txt  ./configurationReseauInteractif.sh PC1 00:50:79:66:68:00 10.10.4.1/16
+./configurationReseauInteractif.sh: line 4: Nom: command not found
+./configurationReseauInteractif.sh: line 6: Adresse: command not found
+./configurationReseauInteractif.sh: line 8: Adresse: command not found
+./configurationReseauInteractif.sh: line 14: Merci d'avoir entré les informations suivantes :
+
+Nom du PC   : ${Nom du PC}
+Adresse MAC : ${Adresse MAC}
+Adresse IP  : ${Adresse IP}: bad substitution
+                                                                                                                             ✗
+
+  04/08/2023   13:30.53   /home/mobaxterm/configurationReseau.txt  nano configurationReseauInteractif.sh
+  GNU nano 4.9                                   configurationReseauInteractif.sh
+#!/bin/bash
+#configurationReseauInteractif.sh
+
+Nom du PC="PC1"
+
+Adresse MAC="00:50:79:66:68:00"
+
+Adresse IP="10.10.4.1/16"
+
+echo"Merci d'avoir entré les informations suivantes :
+
+Nom du PC   : ${Nom du PC}
+Adresse MAC : ${Adresse MAC}
+Adresse IP  : ${Adresse IP}"
+exit
+
+
+  04/08/2023   13:42.07   /home/mobaxterm  ls
+bin  configurationReseau.txt  Desktop  LauncherFolder  MyDocuments  script0.sh  script1.sh  script2.sh
+                                                                                                                             ✓
